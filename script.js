@@ -110,8 +110,6 @@ const setupContactForm = () => {
         alert('Thank you for your message! I will get back to you soon.');
     });
 };
-
-// Initialize everything when the DOM is loaded
 document.addEventListener('DOMContentLoaded', () => {
     const navToggle = document.getElementById('nav-toggle');
     const navList = document.getElementById('nav-list');
@@ -119,6 +117,10 @@ document.addEventListener('DOMContentLoaded', () => {
     navToggle.addEventListener('click', () => {
         navList.classList.toggle('active');
     });
+});
+
+// Initialize everything when the DOM is loaded
+document.addEventListener('DOMContentLoaded', () => {
     observeElements();
     animateSkillBars();
     setupTestimonials();

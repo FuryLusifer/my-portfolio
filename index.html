@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piyush's Portfolio</title>
+    <meta name="description" content="Piyush's Portfolio">
+    <meta name="author" content="Portfolio">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap">
+</head>
+<body>
+        <!-- Navigation Bar -->
+        <nav class="navbar">
+            <div class="container">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#hero">Home</a></li>
+                    <li class="nav-item"><a href="#about">About</a></li>
+                    <li class="nav-item"><a href="#projects">Projects</a></li>
+                    <li class="nav-item"><a href="#skills">Skills</a></li>
+                    <li class="nav-item"><a href="#testimonials">Testimonials</a></li>
+                    <li class="nav-item"><a href="#contact">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <span class="tag fade-in">Welcome to my portfolio</span>
+            <h1 class="fade-in">I'm Piyush Kayastha</h1>
+            <h2 class="fade-up">Java Developer</h2>
+            <p class="fade-in">"Turning coffee into code, one Java class at a time! ☕💻</p>
+            <button onclick="scrollToProjects()" class="button fade-in">View My Work</button>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h1>About Me</h1>
+        <div class="about-content">
+            <div class="about-image">
+                <img src="/resources/profile.png" alt="Profile">
+            </div>
+            <div class="about-text">
+                <p>Java enthusiast, problem-solver, and code alchemist, turning logic into software magic. When I'm not
+                debugging, I'm probably debugging my debugging. Passionate about building efficient apps, automating the boring stuff, 
+               and occasionally winning the battle against semicolons. Let's create something awesome—preferably with fewer bugs! 🚀☕</p>
+                <ul>
+                    <li>Built Java applications like Task Manager and Weather App for efficiency and real-time data.</li>
+                    <li>Skilled in Java, MySQL, and web technologies with a strong coding foundation.</li>
+                    <li>Focused on problem-solving, performance optimization, and clean code.</li>
+                </ul>
+                <a href="/resources/Piyush_Kayastha_CV.pdf" class="button">Download Résumé</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <h2>Featured Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&w=800&q=80" alt="weather-forecast">
+                </div>
+                <div class="project-info">
+                    <h3>Weather Forecast App</h3>
+                    <p></p>A Java-powered app delivering real-time weather updates with a sleek and user-friendly interface.☀️🌧️</p>
+                    <a href="https://github.com/FuryLusifer/weather-forecast" class="button">View Project</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=800&q=80" alt="crypto-checker">
+                </div>
+                <div class="project-info">
+                    <h3>Crypto Checker App</h3>
+                    <p>"A sleek and real-time Java-based app to track cryptocurrency prices and market trends effortlessly.🚀📊"</p>
+                    <a href="https://github.com/FuryLusifer/crypto-checker" class="button">View Project</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80" alt="NumberGuessGame">
+                </div>
+                <div class="project-info">
+                    <h3>Number Guessing Game</h3>
+                    <p>A fun and interactive Java game that challenges you to guess the correct number with smart hints!🎯🔢</p>
+                    <a href="https://github.com/FuryLusifer/NumberGuessGame" class="button">View Project</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <h2>Skills & Expertise</h2>
+        <div class="skills-container">
+            <div class="skill-item">
+                <div class="skill-header">
+                    <span>Java</span>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-progress" data-level="90"></div>
+                </div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-header">
+                    <span>Python</span>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-progress" data-level="85"></div>
+                </div>
+            </div>
+            <!-- More skills... -->
+            <div class="skill-item">
+                <div class="skill-header">
+                    <span>C</span>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-progress" data-level="80"></div>
+                </div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-header">
+                    <span>PHP</span>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-progress" data-level="75"></div>
+                </div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-header">
+                    <span>HTML,CSS,JavaScript</span>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-progress" data-level="88"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <h2>Testimonials</h2>
+        <div class="testimonial-container">
+            <div class="testimonial-content">
+                <p class="quote"></p>
+                <div class="author">
+                    <p class="author-name"></p>
+                    <p class="author-title"></p>
+                </div>
+            </div>
+            <div class="testimonial-dots"></div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Get in Touch</h2>
+        <form id="contact-form" class="contact-form">
+            <div class="form-grid">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="6" required></textarea>
+            </div>
+            <button type="submit" class="button">Send Message</button>
+        </form>
+        <div class="social-links">
+            <a href="tel:+9779823211190" target="_blank" rel="noopener noreferrer">
+                <svg class="icon" viewBox="0 0 24 24">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M13.0748 6.63877C13.2878 6.1172 13.8906 5.86414 14.4212 6.07354C15.2276 6.39179 15.957 6.8728 16.5625 7.48549C17.1679 8.09818 17.6358 8.82892 17.936 9.63048C18.1335 10.1579 17.8587 10.7429 17.3221 10.9371C16.7856 11.1312 16.1905 10.8611 15.993 10.3336C15.7928 9.79925 15.4809 9.31209 15.0773 8.90363C14.6737 8.49517 14.1874 8.1745 13.6498 7.96233C13.1192 7.75293 12.8618 7.16035 13.0748 6.63877Z" fill="#000000"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M13.0369 2.79776C13.1907 2.22376 13.7807 1.88313 14.3547 2.03693C16.1791 2.52577 17.8427 3.48623 19.1782 4.82178C20.5138 6.15732 21.4742 7.82088 21.9631 9.64527C22.1169 10.2193 21.7762 10.8093 21.2022 10.9631C20.6282 11.1169 20.0382 10.7762 19.8844 10.2022C19.4934 8.74273 18.725 7.41188 17.6566 6.34344C16.5881 5.27501 15.2573 4.50664 13.7978 4.11557C13.2238 3.96176 12.8831 3.37176 13.0369 2.79776Z" fill="#000000"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M10.509 8.37614C9.83024 5.92369 7.38659 4.40893 4.9684 5.21552C3.3929 5.74099 2.43384 6.72133 2.1159 8.02892C1.82039 9.24432 2.1284 10.5559 2.60677 11.715C3.57009 14.0492 5.4767 16.3617 6.5562 17.442C7.6108 18.4974 9.91998 20.4123 12.2585 21.3844C13.4197 21.8671 14.7361 22.1805 15.9571 21.8857C17.2712 21.5684 18.2565 20.6044 18.7848 19.0178C19.5902 16.5997 18.0782 14.1542 15.6263 13.4745L15.6263 13.4745C13.9503 13.01 12.1927 13.453 10.9932 14.5295C10.7117 14.3115 10.4409 14.0733 10.1827 13.8149C9.92317 13.5552 9.68413 13.2828 9.46537 12.9995C10.5335 11.7996 10.9715 10.0473 10.509 8.37614L10.509 8.37614Z" fill="#000000"/>    
+                </svg>
+            </a>
+            <a href="mailto:piyushkayastha2@gmail.com" target="_blank" rel="noopener noreferrer">
+                <svg class="icon" viewBox="0 0 32 32">
+                    <path d="M30.996 7.824v17.381c0 0 0 0 0 0.001 0 1.129-0.915 2.044-2.044 2.044-0 0-0 0-0.001 0h-4.772v-11.587l-8.179 6.136-8.179-6.136v11.588h-4.772c0 0 0 0-0 0-1.129 0-2.044-0.915-2.044-2.044 0-0 0-0.001 0-0.001v0-17.381c0-0 0-0.001 0-0.001 0-1.694 1.373-3.067 3.067-3.067 0.694 0 1.334 0.231 1.848 0.619l-0.008-0.006 10.088 7.567 10.088-7.567c0.506-0.383 1.146-0.613 1.84-0.613 1.694 0 3.067 1.373 3.067 3.067v0z"></path>
+                </svg>
+            </a>
+            <a href="https://github.com/FuryLusifer" target="_blank" rel="noopener noreferrer">
+                <svg class="icon" viewBox="0 0 24 24">
+                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                </svg>
+            </a>
+            <a href="https://linkedin.com/in/piyushkayastha" target="_blank" rel="noopener noreferrer">
+                <svg class="icon" viewBox="0 0 24 24">
+                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                </svg>
+            </a>
+            <a href="https://instagram.com/piyushkayastha2" target="_blank" rel="noopener noreferrer">
+                <svg class="icon" viewBox="0 0 24 24">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18ZM12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z" fill="#0F0F0F"/>
+                    <path d="M18 5C17.4477 5 17 5.44772 17 6C17 6.55228 17.4477 7 18 7C18.5523 7 19 6.55228 19 6C19 5.44772 18.5523 5 18 5Z" fill="#0F0F0F"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M1.65396 4.27606C1 5.55953 1 7.23969 1 10.6V13.4C1 16.7603 1 18.4405 1.65396 19.7239C2.2292 20.8529 3.14708 21.7708 4.27606 22.346C5.55953 23 7.23969 23 10.6 23H13.4C16.7603 23 18.4405 23 19.7239 22.346C20.8529 21.7708 21.7708 20.8529 22.346 19.7239C23 18.4405 23 16.7603 23 13.4V10.6C23 7.23969 23 5.55953 22.346 4.27606C21.7708 3.14708 20.8529 2.2292 19.7239 1.65396C18.4405 1 16.7603 1 13.4 1H10.6C7.23969 1 5.55953 1 4.27606 1.65396C3.14708 2.2292 2.2292 3.14708 1.65396 4.27606ZM13.4 3H10.6C8.88684 3 7.72225 3.00156 6.82208 3.0751C5.94524 3.14674 5.49684 3.27659 5.18404 3.43597C4.43139 3.81947 3.81947 4.43139 3.43597 5.18404C3.27659 5.49684 3.14674 5.94524 3.0751 6.82208C3.00156 7.72225 3 8.88684 3 10.6V13.4C3 15.1132 3.00156 16.2777 3.0751 17.1779C3.14674 18.0548 3.27659 18.5032 3.43597 18.816C3.81947 19.5686 4.43139 20.1805 5.18404 20.564C5.49684 20.7234 5.94524 20.8533 6.82208 20.9249C7.72225 20.9984 8.88684 21 10.6 21H13.4C15.1132 21 16.2777 20.9984 17.1779 20.9249C18.0548 20.8533 18.5032 20.7234 18.816 20.564C19.5686 20.1805 20.1805 19.5686 20.564 18.816C20.7234 18.5032 20.8533 18.0548 20.9249 17.1779C20.9984 16.2777 21 15.1132 21 13.4V10.6C21 8.88684 20.9984 7.72225 20.9249 6.82208C20.8533 5.94524 20.7234 5.49684 20.564 5.18404C20.1805 4.43139 19.5686 3.81947 18.816 3.43597C18.5032 3.27659 18.0548 3.14674 17.1779 3.0751C16.2777 3.00156 15.1132 3 13.4 3Z" fill="#0F0F0F"/>    
+                </svg>
+            </a>
+        </div>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-content">
+                    <p>&copy; 2025 Piyush Kayastha. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -110,14 +110,6 @@ const setupContactForm = () => {
         alert('Thank you for your message! I will get back to you soon.');
     });
 };
-document.addEventListener('DOMContentLoaded', () => {
-    const navToggle = document.getElementById('nav-toggle');
-    const navList = document.getElementById('nav-list');
-
-    navToggle.addEventListener('click', () => {
-        navList.classList.toggle('active');
-    });
-});
 
 // Initialize everything when the DOM is loaded
 document.addEventListener('DOMContentLoaded', () => {
@@ -125,4 +117,11 @@ document.addEventListener('DOMContentLoaded', () => {
     animateSkillBars();
     setupTestimonials();
     setupContactForm();
+
+    const navToggle = document.getElementById('nav-toggle');
+    const navList = document.getElementById('nav-list');
+
+    navToggle.addEventListener('click', () => {
+        navList.classList.toggle('active');
+    });
 });

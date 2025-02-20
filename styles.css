@@ -1,7 +1,7 @@
 :root {
     --primary: #000000;
     --secondary: #F5F5F5;
-    --accent: #E6B30E;
+    --accent: #6f3e60;
     --text: #000000;
     --background: #e6e6fa; /* Add background color variable */
 }
@@ -128,7 +128,7 @@ section {
 .hero-content {
     max-width: 800px;
     padding: 0 1rem;
-    /*background: rgba(0, 0, 0, 0.5); /* Optional: Add a semi-transparent background to the content for better readability */
+    background: rgba(0, 0, 0, 0.2); /* Optional: Add a semi-transparent background to the content for better readability */
     padding: 2rem;
     border-radius: 10px;
     z-index: 1; /* Ensure the content is above the video */
@@ -137,7 +137,7 @@ section {
 .tag {
     display: inline-block;
     padding: 0.5rem 1rem;
-    background-color: rgba(230, 179, 14, 0.1);
+    background-color: rgb(230, 14, 14);
     color: var(--accent);
     border-radius: 9999px;
     margin-bottom: 1.5rem;
@@ -146,15 +146,15 @@ section {
 .hero h1 {
     font-size: 3.5rem;
     margin-bottom: 1.5rem;
-    color: greenyellow;
+    color: purple;
 }
 
 .hero h2.fade-up {
-    color: greenyellow; /* Set font color to greenyellow */
+    color: purple; /* Set font color to greenyellow */
 }
 
 .hero p.fade-in {
-    color: greenyellow; /* Set font color to greenyellow */
+    color: purple; /* Set font color to greenyellow */
 }
 /* Buttons */
 .button {

@@ -113,6 +113,12 @@ const setupContactForm = () => {
 
 // Initialize everything when the DOM is loaded
 document.addEventListener('DOMContentLoaded', () => {
+    const navToggle = document.getElementById('nav-toggle');
+    const navList = document.getElementById('nav-list');
+
+    navToggle.addEventListener('click', () => {
+        navList.classList.toggle('active');
+    });
     observeElements();
     animateSkillBars();
     setupTestimonials();
